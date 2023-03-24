@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+          "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1000px" height="1000px"
+     viewBox="0 0 1000 400"
+     preserveAspectRatio="xMidYMid">
+    <!-- The scene description goes here! -->
+    <defs>
+        <g id="triangle">
+            <polygon points="400,200 425, 50 450,200" />
+        </g>
+
+        <g id="line">
+            <line x1="200" y1="200" x2="500" y2="250" stroke="red" stroke-width="15" />
+        </g>
+
+        <g id="heptagon">
+            <polygon points="247,246 269,264 269,289 245,310 217,304 205,278 219,252"
+                     fill="none" stroke="black" stroke-width="1" />
+            <line x1="247" y1="246" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <line x1="269" y1="264" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <line x1="269" y1="289" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <line x1="245" y1="310" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <line x1="217" y1="304" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <line x1="205" y1="278" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <line x1="219" y1="252" x2="239" y2="277" stroke="black" stroke-width="1" />
+            <animateTransform attributeName="transform" type="rotate" from="0 238 276" to="360 238 276" begin="3s" dur="15s" repeatCount="indefinite"/>
+        </g>
+    </defs>
+
+    <!-- Purple -->
+    <use xlink:href="#triangle" fill="purple" transform="scale(1.4 1.4) translate(-250 -105)" />
+    <use xlink:href="#heptagon" transform="scale(1.8,1.8) translate(-178 -339)" />
+    <use xlink:href="#heptagon" transform="scale(1.8,1.8) translate(-20 -308)" />
+    <use xlink:href="#line" transform="scale(1, 1.2) translate(-100 -295)" />
+
+    <!-- Green -->
+    <use xlink:href="#triangle" fill="green" transform="translate(380 -105)" />
+    <use xlink:href="#heptagon" transform="scale(1.6,1.6) translate(182 -325)" />
+    <use xlink:href="#heptagon" transform="scale(1.6,1.6) translate(340 -297)" />
+    <use xlink:href="#line" transform="scale(0.9 1) translate(540 -280)" />
+
+    <!-- Blue -->
+    <use xlink:href="#triangle" fill="blue" transform="scale(1.6, 1.6) translate(-50 70)" />
+    <use xlink:href="#heptagon" transform="scale(2) translate(140 -162)" />
+    <use xlink:href="#heptagon" transform="scale(2) translate(-30 -198)" />
+    <use xlink:href="#line" transform="scale(1.2, 1.5) translate(140 -95)" />
+
+</svg>
